@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime Go — Каталог</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="Главная.html" class="logo"><img src="i.png" alt="Логотип магазина"></a>
+        <nav class="menu-container">
+            <ul>
+                <li><a href="Главная.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="catalog.html" class="active"><i class="fas fa-book-open"></i> Каталог</a></li>
+                <li><a href="Возврат и Гарантии.html"><i class="fas fa-exchange-alt"></i> Возврат и Гарантия</a></li>
+                <li><a href="Оплата и Доставка.html"><i class="fas fa-truck"></i> Оплата и Доставка</a></li>
+                <li><a href="О нас.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                <li><a href="Контакты.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Баннер -->
+   <div class="banner">
+    <img src="banner4.webp" alt="Баннер">
+    <div class="banner-content">
+        <h1>Добро пожаловать в мир аниме и манги!</h1>
+        <p>Откройте для себя новые истории и приключения!</p>
+    </div>
+</div>
+
+    <main>
+        <section id="catalog">
+            <h2 id="catalog"><i class="fas fa-book-open"></i>Каталог манги</h2>
+            <form action="" method="GET" class="filter-form">
+                <label for="genre-filter">Жанр:</label>
+                <select id="genre-filter" name="genre">
+                    <option value="">Все жанры</option>
+                    <option value="romance">Романтика</option>
+                    <option value="sports">Спорт</option>
+                    <option value="shounen">Сёнэн</option>
+                    <option value="seinen">Сэйнэн</option>
+                    <option value="isekai">Исекай</option>
+                </select>
+
+                <label for="author-filter">Автор:</label>
+                <input type="text" id="author-filter" placeholder="Имя автора">
+
+                <button type="submit">Фильтровать</button>
+            </form>
+
+            <div class="product-grid">
+                <!-- Спорт -->
+                <div class="product-card sports">
+                    <img src="Slam.webp" alt="Slam Dunk">
+                    <h3>Slam Dunk</h3>
+                    <p>Автор: Takehiko Inoue</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 150 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card sports">
+                    <img src="Kuro.jpg" alt="Kuroko no Basket">
+                    <h3>Kuroko no Basket</h3>
+                    <p>Автор: Tadatoshi Fujimaki</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 200 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card sports">
+                    <img src="ippo.webp" alt="Hajime no Ippo">
+                    <h3>Hajime no Ippo</h3>
+                    <p>Автор: George Morikawa</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 180 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card sports">
+                    <img src="haiky.webp" alt="Haikyuu!!">
+                    <h3>Haikyuu!!</h3>
+                    <p>Автор: Haruichi Furudate</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 170 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card sports">
+                    <img src="Ya.webp" alt="Yawara!">
+                    <h3>Yawara!</h3>
+                    <p>Автор: Chizuru Kyoko</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 160 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <!-- Романтика -->
+                <div class="product-card romance">
+                    <img src="JO.webp" alt="Josee, Tigers and Fish">
+                    <h3>Josee, Tigers and Fish</h3>
+                    <p>Автор: Isao Ayasaki</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 150 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card romance">
+                    <img src="Кукла.webp" alt="This doll is in love">
+                    <h3>This doll is in love</h3>
+                    <p>Автор: Say Haruka</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 200 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card romance">
+                    <img src="mono.webp" alt="Monologue of the Pharmacist">
+                    <h3>Monologue of the Pharmacist</h3>
+                    <p>Автор: Midzu Asunoka</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 190 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card romance">
+                    <img src="5.webp" alt="Five Brides">
+                    <h3>Five Brides</h3>
+                    <p>Автор: Nei Niito</p>
+                    <p>Рейтинг: ★★★☆☆ (3 из 5)</p>
+                    <span class="price">Цена: 170 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card romance">
+                    <img src="oreg.jpg" alt="Yahari Ore no Seishun Rabukome wa Machigatte Iru.">
+                    <h3>Yahari Ore no Seishun...</h3>
+                    <p>Автор: Wataru Watari</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 180 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <!-- Сёнэн -->
+                <div class="product-card shounen">
+                    <img src="one.jpg" alt="ONE PIECE">
+                    <h3>ONE PIECE</h3>
+                    <p>Автор: Eiichiro Oda</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 220 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card shounen">
+                    <img src="nar.webp" alt="NARUTO">
+                    <h3>NARUTO</h3>
+                    <p>Автор: Masashi Kishimoto</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 210 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card shounen">
+                    <img src="Bl.webp" alt="BLEACH">
+                    <h3>BLEACH</h3>
+                    <p>Автор: Tite Kubo</p>
+                    <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                    <span class="price">Цена: 200 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card shounen">
+                    <img src="DH.jpg" alt="DEATH NOTE">
+                    <h3>DEATH NOTE</h3>
+                    <p>Автор: Tsugumi Ohba & Takeshi Obata</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 190 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card shounen">
+                    <img src="DB.jpg" alt="DRAGON BALL">
+                    <h3>DRAGON BALL</h3>
+                    <p>Автор: Akira Toriyama</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 230 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <!-- Сэйнэн -->
+                <div class="product-card seinen">
+                    <img src="ber.webp" alt="BERSERK">
+                    <h3>BERSERK</h3>
+                    <p>Автор: Kentaro Miura</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 240 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card seinen">
+                    <img src="Mon.webp" alt="MONSTER">
+                    <h3>MONSTER</h3>
+                    <p>Автор: Naoki Urasawa</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 250 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <!-- Исекай -->
+                <div class="product-card isekai">
+                    <img src="rezero.webp" alt="Re:Zero kara Hajimeru Isekai Seikatsu">
+                    <h3>Re:Zero kara Hajimeru Isekai Seikatsu</h3>
+                    <p>Автор: Tappei Nagatsuki</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 260 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+            
+                <div class="product-card isekai">
+                    <img src="РБ.jpg" alt="Mushoku Tensei: Isekai Ittara Honki Dasu">
+                    <h3>Mushoku Tensei: Isekai Ittara Honki Dasu</h3>
+                    <p>Автор: Ryō Hiruma</p>
+                    <p>Рейтинг: ★★★★★ (5 из 5)</p>
+                    <span class="price">Цена: 270 руб.</span>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                    <button class="more-info-btn">Подробнее</button>
+                </div>
+
+                    <div class="product-card isekai">
+                        <img src="konosuba.jpg" alt="Konosuba">
+                        <h3>Konosuba</h3>
+                        <p>Автор: Natsume Akatsuki</p>
+                        <p>Рейтинг: ★★★★☆ (4 из 5)</p>
+                        <span class="price">Цена: 190 руб.</span>
+                        <button class="add-to-cart-btn">Добавить в корзину</button>
+                        <button class="more-info-btn">Подробнее</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+   <!-- Футер сайта -->
+   <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col contact-info">
+                <h3>Контакты</h3>
+                <p>Телефон: +7 (XXX) XXX XX XX</p>
+                <p>Электронная почта: example@example.com</p>
+                <p>Адрес: Москва, ул. Пушкина, д. 10</p>
+            </div>
+
+            <div class="col social-icons">
+                <h3>Присоединяйтесь к нам</h3>
+                <a href="https://telegram.me/yourchannel" target="_blank"><img src="telegram-circle-footer.svg" alt="Telegram"></a>
+                <a href="https://vk.ru/" target="_blank"><img src="vk-circle-footer.svg" alt="vk"></a>
+            </div>
+
+            <div class="col useful-links">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="/about">О нас</a></li>
+                    <li><a href="/payment_delivery">Оплата и доставка</a></li>
+                    <li><a href="/return_guarantee">Возврат и гарантия</a></li>
+                    <li><a href="/privacy_policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="col legal-info">
+                <h3>Юридическая информация</h3>
+                <p>ООО "Магазин Манги"</p>
+                <p>ИНН ХХХХХХХХХХ</p>
+                <p>Москва, Россия</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Магазин Манги AnimeGo. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
